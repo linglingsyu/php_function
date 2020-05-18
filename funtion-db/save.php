@@ -39,7 +39,6 @@ function save($table,$arg){
         return $pdo->exec($sql);
     
     }
-
 }
 
 function find($table,$id){

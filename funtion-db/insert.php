@@ -31,7 +31,6 @@ function insert($table,$arg){
     // $sql =  $sql . $table .$str1 . " values " . $str2;
     $sql = "insert into $table" . "(`".implode("`,`",array_keys($arg)) ."`) values ". "('".implode("','",$arg) ."')";
     return $pdo->exec($sql);
-
 }
 
 
